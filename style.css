@@ -15,7 +15,6 @@ header {
   width: 960px;
   margin: 50px auto;
   display: flex;
-  column-gap: 30px;
 }
 
 .box-item {
@@ -23,6 +22,11 @@ header {
   padding: 10px;
   background-color: #EEEEEE;
   position: relative;
+  margin-right: 30px;
+}
+
+.box-item:last-of-type {
+  margin-right: 0;
 }
 
 .box-step {
@@ -51,4 +55,27 @@ footer {
   width: 100%;
   height: 50px;
   background-color: #AAAAAA;
+}
+
+/*Media Queries*/
+@media screen and (max-width:768px) {
+
+  .box {
+    width: 100%;
+    display: block;
+  }
+
+  .box-item {
+    width: 90%;
+    margin: 0 auto 20px;
+  }
+
+  .box-item:last-of-type {
+    margin: 0 auto;
+  }
+
+  .box-image {
+    height: 150px;
+  }
+
 }
